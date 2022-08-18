@@ -1,18 +1,18 @@
 {
-  "name": "hawaii-cms",
+  "name": "dab-cms",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "start msedge --new-window http://localhost:3000 & next dev",
-    "build": "next build",
-    "start": "start msedge --new-window http://localhost:3000 & next start",
-    "lint": "next lint",
-    "https": "local-ssl-proxy --key localhost-key.pem --cert localhost.pem --source 3001 --target 3000"
+    "build": "next build && next export",    
+    "dev": "next dev",
+    "start": "next start",
+    "lint": "next lint"    
   },
   "dependencies": {
     "@apollo/client": "^3.6.4",
     "@azure/msal-browser": "^2.26.0",
     "@azure/msal-react": "^1.4.2",
+    "@azure/static-web-apps-cli": "^1.0.2",
     "@chakra-ui/icons": "^2.0.1",
     "@chakra-ui/react": "^2.1.2",
     "@emotion/react": "^11.9.0",
@@ -24,7 +24,6 @@
     "@welcome-ui/markdown-editor": "^4.2.0",
     "@xstyled/styled-components": "^3.6.0",
     "chakra-ui-markdown-renderer": "^4.1.0",
-    "dotenv": "^16.0.1",
     "framer-motion": "^6.3.4",
     "graphql": "^16.5.0",
     "local-ssl-proxy": "^1.2.3",

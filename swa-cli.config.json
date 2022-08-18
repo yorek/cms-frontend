@@ -2,7 +2,7 @@
   "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
   "configurations": {
     "cms-frontend": {
-      "appLocation": "./frontend",
+      "appLocation": ".",
       "outputLocation": "./out"
     }
   }

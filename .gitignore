@@ -351,5 +351,5 @@ MigrationBackup/
 
 # Custom
 /node_modules
-.next/
-.env
+/.next/
+/out

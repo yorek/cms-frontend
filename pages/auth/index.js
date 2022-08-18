@@ -1,6 +1,5 @@
 // Next Imports
 import Head from 'next/head'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 
 // React Imports
@@ -91,7 +90,7 @@ export default function Auth({ user, setUser, setDbUser }) {
             <main className={styles.main}>
                 <Center p={8} mt={'2%'}>
                     <VStack spacing={10}>
-                        <Image src="/msft.png" alt="Microsoft Logo" width={150} height={100} />
+                        <img src="/msft.png" alt="Microsoft Logo" width={150} height={100} />
                     <Box
                         w={'500px'}
                         bg={useColorModeValue('white', 'gray.800')}
